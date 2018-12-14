@@ -1,0 +1,21 @@
+Jakob Pucher
+
+---Exceptions---
+
+Antal : 2
+Var? : Projekt = DAL, Klass = RentalCarDbClient.cs
+Första metoden heter "RemoveCar(int id)" och finns på rad 35.
+Andra metoden heter "RemoveCustomer(int id)" och finns på rad 110.
+
+
+---Bindings---
+
+wsHttpBinding - För att bidra med säkerhet. Kryptering av meddelanden mm.
+netTcpBinding - Finns för att servicen ska vara tillgänglig för TCP-kommunikation
+webHttpBinding - Används för min REST-Service-endpoint
+mexHttpBinding - Används för att kunna skicka metadata
+
+---Övrigt---
+
+Jag har valt att ha ett kontrakt för min service istället för att dela upp den i t.ex. Car, Customer, Booking.
+Denna metod har jag valt med anledning av att jag upplever att man får ut de svar samt den information som är av vikt för den här uppgiften. 
